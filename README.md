@@ -8,6 +8,9 @@
   - [Índice](#índice)
   - [Introducción](#introducción)
     - [Características Principales](#características-principales)
+  - [Diagramas de la Aplicación](#diagramas-de-la-aplicación)
+    - [Diagrama de Clases](#diagrama-de-clases)
+    - [Diagrama de Base de Datos](#diagrama-de-base-de-datos)
   - [Actividades de la Sesión 1](#actividades-de-la-sesión-1)
   
 ## Introducción
@@ -20,6 +23,23 @@
 - **Gestión de Libros**: Funcionalidades para añadir, editar, eliminar y listar libros disponibles en la tienda.
 - **Categorías de Libros**: Clasificación de libros en diferentes categorías para facilitar la navegación y búsqueda.
 - **Interfaz de Usuario Amigable**: Un diseño intuitivo que facilita la administración de libros y categorías, así como el proceso de compra para los usuarios.
+
+
+## Diagramas de la Aplicación
+
+Para entender mejor la estructura y diseño de la aplicación "Ebook Store", revisa los siguientes diagramas:
+
+### Diagrama de Clases
+
+![Diagrama de Clases](diagrama_clase_venta_libro.png)
+
+
+### Diagrama de Base de Datos
+
+![Diagrama de Base de Datos](diagrama_base_datos_venta_libro.png)
+
+Este diagrama ilustra el esquema de la base de datos utilizada por la aplicación, mostrando las tablas, columnas, y relaciones entre las entidades.
+
 
 ## Actividades de la Sesión 1
 
