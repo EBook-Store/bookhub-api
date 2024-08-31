@@ -1,13 +1,13 @@
-package com.hampcode.ebookstore;
+package com.hampcode.bookhub;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EbookStoreApiApplication {
+public class BookHubApiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(EbookStoreApiApplication.class, args);
+        SpringApplication.run(BookHubApiApplication.class, args);
     }
 
 }

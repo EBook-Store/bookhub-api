@@ -1,10 +1,10 @@
-package com.hampcode.ebookstore;
+package com.hampcode.bookhub;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EbookStoreApiApplicationTests {
+class BookHubApiApplicationTests {
 
     @Test
     void contextLoads() {

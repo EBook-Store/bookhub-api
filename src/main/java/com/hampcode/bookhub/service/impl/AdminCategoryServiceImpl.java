@@ -1,9 +1,8 @@
-package com.hampcode.ebookstore.service.impl;
+package com.hampcode.bookhub.service.impl;
 
-import com.hampcode.ebookstore.model.entity.Category;
-import com.hampcode.ebookstore.repository.CategoryRepository;
-import com.hampcode.ebookstore.service.AdminCategoryService;
-import lombok.AllArgsConstructor;
+import com.hampcode.bookhub.model.entity.Category;
+import com.hampcode.bookhub.repository.CategoryRepository;
+import com.hampcode.bookhub.service.AdminCategoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -12,7 +11,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.NoSuchElementException;
 
 @RequiredArgsConstructor
 @Service
