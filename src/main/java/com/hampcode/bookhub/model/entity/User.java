@@ -3,7 +3,6 @@ package com.hampcode.bookhub.model.entity;
 import com.hampcode.bookhub.model.enums.Role;
 import jakarta.persistence.*;
 import lombok.Data;
-
 import java.time.LocalDateTime;
 
 @Data
