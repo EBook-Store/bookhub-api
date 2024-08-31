@@ -20,7 +20,7 @@ public class Purchase {
     private PaymentStatus paymentStatus;
 
     @ManyToOne
-    @JoinColumn(name = "customer_id", referencedColumnName = "id", foreignKey = @ForeignKey(name = "fk_purchase_users"))
+    @JoinColumn(name = "customer_id", referencedColumnName = "id",foreignKey = @ForeignKey(name = "fk_purchase_users"))
     private User customer;
 
     @OneToMany(mappedBy = "purchase", cascade = CascadeType.ALL)

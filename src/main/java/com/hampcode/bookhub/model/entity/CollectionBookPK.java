@@ -16,6 +16,6 @@ public class CollectionBookPK implements Serializable {
     private Book book;
 
     @ManyToOne
-    @JoinColumn(name = "collection_id", nullable = false, foreignKey = @ForeignKey(name = "fk_collectionbook_collections"))
+    @JoinColumn(name = "collection_id", nullable = false,  foreignKey = @ForeignKey(name = "fk_collectionbook_collections"))
     private Collection collection;
 }

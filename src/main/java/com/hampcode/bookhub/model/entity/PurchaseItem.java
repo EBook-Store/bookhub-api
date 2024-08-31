@@ -18,11 +18,11 @@ public class PurchaseItem {
     private Integer downloadsAvailable;
 
     @ManyToOne
-    @JoinColumn(name = "book_id", referencedColumnName = "id", foreignKey = @ForeignKey(name = "fk_purchaseitem_books"))
+    @JoinColumn(name = "book_id", referencedColumnName = "id",foreignKey = @ForeignKey(name = "fk_purchaseitem_books"))
     private Book book;
 
     @JsonIgnore
     @ManyToOne
-    @JoinColumn(name = "purchase_id", referencedColumnName = "id", foreignKey = @ForeignKey(name = "fk_purchaseites_purchases"))
+    @JoinColumn(name = "purchase_id", referencedColumnName = "id",foreignKey = @ForeignKey(name = "fk_purchaseites_purchases"))
     private Purchase purchase;
 }

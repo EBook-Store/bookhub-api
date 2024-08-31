@@ -8,14 +8,9 @@ import java.util.List;
 
 public interface AdminAuthorService {
     List<Author> findAll();
-
     Page<Author> paginate(Pageable pageable);
-
     Author create(Author Author);
-
     Author findById(Integer id);
-
     Author update(Integer id, Author updatedAuthor);
-
     void delete(Integer id);
 }
