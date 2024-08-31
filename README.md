@@ -1,39 +1,77 @@
-# BookHub
 
-## Índice
-- [BookHub Store](#bookhub-store)
-  - [Índice](#índice)
-  - [Introducción](#introducción)
-    - [Características Principales](#características-principales)
-  - [Diagramas de la Aplicación](#diagramas-de-la-aplicación)
-    - [Diagrama de Clases](#diagrama-de-clases)
-    - [Diagrama de Base de Datos](#diagrama-de-base-de-datos)
-  - [Actividades de la Sesión 1](#actividades-de-la-sesión-1)
-  
 ## Introducción
 
-**BookHub** es una aplicación web diseñada para facilitar la compra de libros electrónicos, con integración de pagos a través de PayPal y administración eficiente de los datos de libros, categorías y autores. La aplicación permite a los administradores realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre libros, categorías y autores, gestionando de manera sencilla tanto el catálogo de libros como las transacciones de compra realizadas por los clientes.
+**BookHub** es una aplicación web diseñada para facilitar la compra de libros electrónicos y proporcionar una experiencia de usuario completa en la gestión de bibliotecas digitales personales. Con BookHub, los usuarios pueden crear una cuenta, iniciar sesión, y realizar pagos de manera segura a través de PayPal para adquirir sus libros favoritos. La aplicación permite a los administradores realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre libros, categorías y autores, gestionando de manera eficiente el catálogo de libros. Los usuarios pueden también organizar sus libros adquiridos en colecciones personalizadas.
+
+El propósito de BookHub es ofrecer una plataforma integrada que combine la facilidad de compra de libros electrónicos, la gestión del catálogo por parte de administradores, y la personalización de bibliotecas digitales por parte de los usuarios, todo en un entorno seguro y amigable.
+
+### Colaboradores del Proyecto
+
+| **Nombre**                        | **Rol**                                     | **Perfil**                                                 |
+|-----------------------------------|---------------------------------------------|------------------------------------------------------------|
+| Henry Antonio Mendoza Puerta      | Líder del Proyecto | [LinkedIn](https://www.linkedin.com/in/hampcode/)           |
+
+### Revisa el Progreso del Proyecto BookHub
+
+| **Columna**       | **Descripción**                                                                                                                                    |
+|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Backlog**       | Contiene todas las historias de usuario, tareas y características que deben desarrollarse. Es el listado de todo el trabajo pendiente.              |
+| **En Progreso**   | Incluye las tareas que están actualmente en desarrollo. Visualiza el trabajo en curso para asegurar el flujo continuo de trabajo.                   |
+| **Revisión**      | Después de completar una tarea, se mueve aquí para una revisión de código y revisión por pares (peer review). Esta fase incluye la creación de **pull requests** para asegurar que el código cumpla con los estándares de calidad antes de integrarse al proyecto principal. |
+| **En Pruebas**    | Contiene las tareas que han pasado la revisión de código y necesitan pruebas exhaustivas (unitarias, de integración y de aceptación) para garantizar su calidad. |
+| **Hecho**         | Las tareas completamente desarrolladas, revisadas y probadas se mueven aquí, indicando que están listas y finalizadas.                               |
+
+Mira cómo va avanzando nuestro trabajo visitando el siguiente enlace: [Tablero de Trello](https://trello.com/b/5sNtLdze).
+
 
 ### Funcionalidades de la Aplicación BookHub
 
-- **Compra de Libros Electrónicos:**  
-  Integración con PayPal para realizar pagos seguros y rápidos, permitiendo a los usuarios comprar libros electrónicos de manera eficiente.
+#### **Módulo de Gestión de Usuarios**
 
-- **Gestión de Libros:**  
-  Funcionalidades para añadir, editar, eliminar y listar libros disponibles, asegurando una gestión eficaz del catálogo de la aplicación.
+- **Creación de Usuarios e Inicio de Sesión:**
+    - Permitir a los usuarios registrarse en la plataforma.
+    - Facilitar el inicio de sesión para acceder a la cuenta personal.
+    - Mantener la seguridad de las credenciales de los usuarios.
 
-- **Categorías de Libros:**  
-  Clasificación de libros en diferentes categorías para facilitar la navegación y búsqueda por parte de los usuarios, mejorando la experiencia del usuario.
+#### **Módulo de Compras**
 
-- **Gestión de Autores:**  
-  Funcionalidades CRUD (Crear, Leer, Actualizar, Eliminar) para manejar la información de los autores, permitiendo mantener actualizada la base de datos de autores relacionados con los libros.
+- **Compra de Libros Electrónicos:**
+    - Integración con PayPal para pagos seguros y rápidos.
+    - Procesamiento de transacciones para la compra de libros electrónicos.
+    - Confirmación de la compra y entrega del libro en formato digital al usuario.
 
-- **Organización de Libros por el Usuario:**  
-  Funcionalidades que permiten a los usuarios organizar sus libros comprados en colecciones personalizadas o "estanterías virtuales", facilitando así la gestión de su biblioteca personal y mejorando el acceso a los libros según sus preferencias.
+#### **Módulo de Gestión de Contenido**
 
-- **Interfaz de Usuario Amigable:**  
-  Un diseño intuitivo que facilita la administración de libros, categorías y autores, así como el proceso de compra para los usuarios, mejorando la usabilidad y accesibilidad de la aplicación.
+- **Gestión de Libros:**
+    - Añadir nuevos libros al catálogo.
+    - Editar detalles de los libros existentes.
+    - Eliminar libros del catálogo.
+    - Listar todos los libros disponibles para los usuarios.
 
+- **Categorías de Libros:**
+    - Clasificar libros en diferentes categorías.
+    - Facilitar la navegación y búsqueda de libros por categoría.
+    - Mejorar la organización del catálogo de libros.
+
+- **Gestión de Autores:**
+    - Añadir nuevos autores a la base de datos.
+    - Editar información de autores existentes.
+    - Eliminar autores de la base de datos.
+    - Mantener actualizada la información de los autores.
+
+#### **Módulo de Biblioteca Personal**
+
+- **Biblioteca Personal de Libros:**
+    - Permitir a los usuarios organizar sus libros comprados en colecciones personalizadas o "estanterías virtuales".
+    - Facilitar la creación, edición y eliminación de colecciones de libros.
+    - Mejorar el acceso y la gestión de la biblioteca personal del usuario.
+
+#### **Módulo de Reportes**
+
+- **Reportes de Actividad y Ventas:**
+    - Generar reportes de compras realizadas por los usuarios.
+    - Mostrar estadísticas de ventas de libros.
+    - Proveer información detallada sobre la actividad de los usuarios, como libros más comprados o autores más populares.
 
 ## Diagramas de la Aplicación
 
@@ -50,26 +88,12 @@ Para entender mejor la estructura y diseño de la aplicación "BookHub", revisa 
 
 Este diagrama ilustra el esquema de la base de datos utilizada por la aplicación, mostrando las tablas, columnas, y relaciones entre las entidades.
 
+### Descripción de Capas del Proyecto
 
-## Actividades de la Sesión 1
-
-En esta sesión abarcaremos las siguientes actividades para configurar y desarrollar la API de la aplicación:
-
-1. **Preparación de la Base de Datos**
-   - Configuración de la base de datos para almacenar la información de libros y categorías.
-
-2. **Diseño de la API**
-   - Planificación de los endpoints necesarios para gestionar las entidades de la aplicación.
-
-3. **Creación del Proyecto para la API**
-   - Configuración inicial del proyecto utilizando el framework de tu elección (por ejemplo, Spring Boot para Java).
-
-4. **Implementación de los Endpoints para Gestionar las Categorías y Libros**
-   - **Mapeo de las entidades**: Definición de las entidades  con sus respectivas relaciones.
-   - **Creación del Repositorio**: Implementación de los repositorios para interactuar con la base de datos.
-   - **Creación del Controlador**: Desarrollo de controladores REST para manejar las solicitudes HTTP relacionadas con libros, categorías y autores.
-   - **Creación del Servicio**: Implementación de la lógica de negocio en servicios para manejar las operaciones CRUD.
-
----
-
-
+| capa        | descripción                                                                                  |
+|-------------|----------------------------------------------------------------------------------------------|
+| api         | Contiene los controladores REST que manejan las solicitudes HTTP y las respuestas.            |
+| entity      | Define las entidades del modelo de datos que se mapean a las tablas de la base de datos.      |
+| repository  | Proporciona la interfaz para las operaciones CRUD y la interacción con la base de datos.      |
+| service     | Declara la lógica de negocio y las operaciones que se realizarán sobre las entidades.         |
+| service impl| Implementa la lógica de negocio definida en los servicios, utilizando los repositorios necesarios. |
