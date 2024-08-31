@@ -1,7 +1,7 @@
-package com.hampcode.ebookstore.api;
+package com.hampcode.bookhub.api;
 
-import com.hampcode.ebookstore.model.entity.Book;
-import com.hampcode.ebookstore.service.AdminBookService;
+import com.hampcode.bookhub.model.entity.Book;
+import com.hampcode.bookhub.service.AdminBookService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

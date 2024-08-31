@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "096b6777-07f0-4518-b290-3c7c97573955",
-		"name": "ebook-store-api",
+		"name": "bookhub-api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "6246033"
 	},
@@ -121,7 +121,7 @@
 					"response": []
 				},
 				{
-					"name": "Obtener una página de categorías",
+					"name": "Paginación de categorías",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -217,12 +217,22 @@
 					"name": "Obtener todos los libros",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/admin/books",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"books"
+							]
+						}
 					},
 					"response": []
 				},
 				{
-					"name": "Obtener una página de libros",
+					"name": "Paginación  de libros",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -287,6 +297,167 @@
 								"admin",
 								"books",
 								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "author",
+			"item": [
+				{
+					"name": "Listar Todos los Autores",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/admin/authors",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"authors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Paginación de autores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/admin/authors/page?page=0&size=10&sort=firstName",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"authors",
+								"page"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								},
+								{
+									"key": "sort",
+									"value": "firstName"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crea un nuevo autor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Julio\",\r\n  \"lastName\": \"Cortázar\",\r\n  \"bio\": \"Escritor argentino conocido por su novela 'Rayuela' y sus innovadores cuentos.\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/admin/authors",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"authors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Autor por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/admin/authors/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"authors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualiza un autor existente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Isabel\",\r\n  \"lastName\": \"Allende\",\r\n  \"bio\": \"Escritora chilena, autora de 'La Casa de los Espíritus' y otras obras, conocida por su estilo único de realismo mágico.\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/admin/authors/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"authors",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Elimina un autor por su ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/admin/authors/9",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"admin",
+								"authors",
+								"9"
 							]
 						}
 					},

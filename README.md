@@ -65,7 +65,7 @@ En esta sesión abarcaremos las siguientes actividades para configurar y desarro
    - Configuración inicial del proyecto utilizando el framework de tu elección (por ejemplo, Spring Boot para Java).
 
 4. **Implementación de los Endpoints para Gestionar las Categorías y Libros**
-   - **Mapeo de la Entidad `Category`, `Author` y `Book`**: Definición de las entidades de categoría, autor y libro, con sus respectivas relaciones.
+   - **Mapeo de las entidades**: Definición de las entidades  con sus respectivas relaciones.
    - **Creación del Repositorio**: Implementación de los repositorios para interactuar con la base de datos.
    - **Creación del Controlador**: Desarrollo de controladores REST para manejar las solicitudes HTTP relacionadas con libros, categorías y autores.
    - **Creación del Servicio**: Implementación de la lógica de negocio en servicios para manejar las operaciones CRUD.

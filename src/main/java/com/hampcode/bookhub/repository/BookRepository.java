@@ -1,6 +1,6 @@
-package com.hampcode.ebookstore.repository;
+package com.hampcode.bookhub.repository;
 
-import com.hampcode.ebookstore.model.entity.Book;
+import com.hampcode.bookhub.model.entity.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.hampcode</groupId>
-    <artifactId>ebook-store-api</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>ebook-store-api</name>
-    <description>ebook-store-api</description>
+    <artifactId>bookhub-api</artifactId>
+    <version>1.0.0</version>
+    <name>bookhub-api</name>
+    <description>bookhub-api</description>
     <url/>
     <licenses>
         <license/>
@@ -60,6 +60,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <build>
